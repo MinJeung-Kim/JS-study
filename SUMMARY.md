@@ -16,6 +16,7 @@
     * [2) VE & LE](readme/02.-execution-context/2-ve-and-le/README.md)
       * [2-1) EnvironmentRecord](readme/02.-execution-context/2-ve-and-le/2-1-environmentrecord/README.md)
         * [2-1-1) 함수 선언문 & 함수 표현식](readme/02.-execution-context/2-ve-and-le/2-1-environmentrecord/2-1-1-and.md)
+      * [2-2) OuterEnvironment Reference](readme/02.-execution-context/2-ve-and-le/2-2-outerenvironment-reference.md)
 * [TypeScript](typescript/README.md)
   * [01. What's TypeScript?](typescript/01.-whats-typescript.md)
   * [02. Basic types](typescript/02.-basic-types/README.md)
