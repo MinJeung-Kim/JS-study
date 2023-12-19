@@ -50,4 +50,4 @@ outer();
 console.log(a); // 1
 ```
 
-<figure><img src="../../../.gitbook/assets/2023-12-19 18 59 53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2023-12-19 18 59 53 (1).png" alt=""><figcaption></figcaption></figure>
