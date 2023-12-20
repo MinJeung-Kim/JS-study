@@ -26,7 +26,7 @@ console.log(instance.staticMethod()); // ⚠️ error
 * 인스턴스가 필요하지 않은 유틸리티 함수나 상수에 유용하게 사용.&#x20;
 * 클래스와 관련되어 있지만, 그 자체로 독립적인 기능이나 데이터를 제공하는 경우에 적합.
 
-<figure><img src="../../../.gitbook/assets/2023-12-20 16 13 34.png" alt=""><figcaption><p>상수변수(BEANS_GRAMM_PER_SHOT)의 중복 데이터  생성 방지.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2023-12-20 16 13 34.png" alt=""><figcaption><p>→ 상수변수(BEANS_GRAMM_PER_SHOT)의 중복 데이터  생성 방지.</p></figcaption></figure>
 
 
 
