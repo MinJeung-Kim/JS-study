@@ -41,3 +41,4 @@
       * [2-2) Abstraction](typescript/03.-oop/2-4/3-abstraction.md)
       * [2-3) Inheritance](typescript/03.-oop/2-4/4-inheritance.md)
       * [2-4) Polymorphism](typescript/03.-oop/2-4/5-polymorphism.md)
+    * [3) Getter & Setter](typescript/03.-oop/3-getter-and-setter.md)
