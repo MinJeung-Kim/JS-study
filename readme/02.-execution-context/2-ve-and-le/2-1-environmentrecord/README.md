@@ -30,7 +30,7 @@ function a(x) {
 
 a(1);
 
-// let, const : 선언만 가능.
+// let, const : 선언만 가능(일시적 사각지대).
 console.log(x); // ⚠️ ReferenceError: Cannot access 'x' before initialization
 const x = 1;
 

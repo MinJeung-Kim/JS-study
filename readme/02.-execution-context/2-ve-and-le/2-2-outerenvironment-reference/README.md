@@ -1,5 +1,5 @@
 ---
-description: 스코프 & 스코프 체인 & OuterEnvironment Reference
+description: 스코프 & 스코프 체인 & OuterEnvironment Reference(외부환경 참조)
 ---
 
 # 2-2) OuterEnvironment Reference
