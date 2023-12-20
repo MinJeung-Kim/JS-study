@@ -21,4 +21,16 @@ layout:
 
 ### Private
 
+* 외부에서 직접적으로 `coffeeBeans`를 수정하게되면 유의미하지 않는 값을 입력해서 사이드이펙트가 발생할 수 있다.
+
 <figure><img src="../../../.gitbook/assets/2023-12-20 17 32 31.png" alt=""><figcaption><p>→ fillCoffeeBeans함수를 통해 beans의 값이 유효한지 검증.</p></figcaption></figure>
+
+### Private Constructor
+
+* static 함수를 제공한다면 생성자를 통해서 생성하는 것을 금지하기위해 사용하므로, constructor을 private로 설정해서 makeMachine()함수를 통해서만 생성하게 설정하는 것을 권장한다.
+
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/2023-12-20 18 16 39.png" alt="" width="563"><figcaption></figcaption></figure>
+
+</div>
