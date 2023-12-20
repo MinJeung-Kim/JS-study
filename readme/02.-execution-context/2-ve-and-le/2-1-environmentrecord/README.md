@@ -14,9 +14,12 @@ description: 호이스팅(hoisting)
 * &#x20;environmentRecord의 수집 과정을 추상화한 개념.
 * 실행 컨텍스트가 관여하는 코드 집단의 **최상단으로** <mark style="background-color:orange;">'끌어올린다'</mark>고 해석하는 것.
 
+
+
 ### 매개변수와 변수 호이스팅
 
 ```javascript
+// var : 선언과 동시에 초기화(undefined)가 이루어 짐.
 function a(x) {
   console.log(x); // 1
   var x;
@@ -26,6 +29,10 @@ function a(x) {
 }
 
 a(1);
+
+// let, const : 선언만 가능.
+console.log(x); // ⚠️ ReferenceError: Cannot access 'x' before initialization
+const x = 1;
 
 // ===================================[ 호이스팅 ]====================================
 function a(x) {
