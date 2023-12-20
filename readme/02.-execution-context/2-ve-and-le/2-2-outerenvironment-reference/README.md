@@ -13,6 +13,11 @@ description: 스코프 & 스코프 체인 & OuterEnvironment Reference
 * **함수 스코프(Function Scope):** 해당 함수의 지역 변수로, 함수 외부에서 접근 ❌.
 * **블록 스코프(Block Scope):** ES6에서 도입된 `let`과 `const`를 사용하여 선언된 변수 , 블록(예: 조건문, 반복문) 내에서만 접근 가능
 
+### 스코프 체인(scope chain)
+
+* <mark style="color:orange;">**OuterEnvironment Reference**</mark>를 통해 식별자 유효범위를 **안에서부터 바깥으로 차례로 검색**해나가는 것.
+* 여러 스코프에서 **동일한 식별자를 선언한 경우**에는 무조건 **스코프 체인 상에서 가장 먼저 발견된 식별자에만 접근** 가능.
+
 ```javascript
 var a = 1;
 var outer = function () {
@@ -50,4 +55,4 @@ outer();
 console.log(a); // 1
 ```
 
-<figure><img src="../../../.gitbook/assets/2023-12-19 18 59 53 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2023-12-19 18 59 53 (1).png" alt=""><figcaption></figcaption></figure>
