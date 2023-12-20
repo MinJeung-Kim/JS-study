@@ -28,13 +28,13 @@ layout:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/2023-12-15 23 51 29.png" alt="" width="563"><figcaption><p>→ Object는 data와 function으로 구성되어 있다.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2023-12-15 23 51 29.png" alt="" width="563"><figcaption><p>→ Object는 data와 function으로 구성되어 있다.</p></figcaption></figure>
 
 </div>
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/2023-12-15 23 51 29 (2).png" alt="" width="563"><figcaption><p>→ 'Object는 Class의 인스턴스다'라고도 한다.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2023-12-15 23 51 29 (2).png" alt="" width="563"><figcaption><p>→ 'Object는 Class의 인스턴스다'라고도 한다.</p></figcaption></figure>
 
 </div>
 
