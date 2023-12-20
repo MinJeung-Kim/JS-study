@@ -7,7 +7,12 @@ description: 호이스팅(hoisting)
 * 현재 컨텍스트와 관련된 **코드의 식별자 정보**들을 저장.
 * 컨텍스트 내부 전체를 처음부터 끝까지 **순서대로 수집**.
 * 코드 실행전, 해당 환경에 속한 **매개변수명, 함수선언, 변수명**등을 수집한다.
-* **호이스팅(hoisting)** : 변수 정보 수집 과정을 이해하기 쉬운 방법으로 대체한 <mark style="background-color:orange;">가상의 개념</mark>.
+
+### **호이스팅(hoisting)** :&#x20;
+
+* 변수 정보 수집 과정을 이해하기 쉬운 방법으로 대체한 <mark style="background-color:orange;">가상의 개념</mark>.
+* &#x20;environmentRecord의 수집 과정을 추상화한 개념.
+* 실행 컨텍스트가 관여하는 코드 집단의 **최상단으로** <mark style="background-color:orange;">'끌어올린다'</mark>고 해석하는 것.
 
 ### 매개변수와 변수 호이스팅
 
