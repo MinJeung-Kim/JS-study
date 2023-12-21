@@ -1,9 +1,10 @@
 ---
+description: 캡슐화(Encapsulation)
 layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
