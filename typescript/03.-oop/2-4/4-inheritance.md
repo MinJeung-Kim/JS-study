@@ -19,6 +19,12 @@ layout:
 * 부모 class에 있는 멤버변수 또는 함수를 상속 받을 수 있다.
 * 상속받은 함수는 재구현 가능(overwriting).
 
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/2023-12-21 21 49 07.png" alt="" width="563"><figcaption></figcaption></figure>
+
+</div>
+
 ```typescript
 {
   type CoffeeCup = {

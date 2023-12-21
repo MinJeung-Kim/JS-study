@@ -1,9 +1,10 @@
 ---
+description: 다형성(Polymorphism)
 layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
@@ -12,6 +13,7 @@ layout:
     visible: true
 ---
 
-# 5) Polymorphism
+# 2-4) Polymorphism
 
 * 다형성
+
