@@ -33,7 +33,8 @@ layout:
 
 ### Interface를 이용한 추상화
 
-* 어디까지 행동을 허용할건지 결정가능
+* 인테페이스에서 규약된 함수들만 접근 가능.
+* **`implements`** 키워드 사용.
 
 <pre class="language-typescript"><code class="lang-typescript">{
 <strong>  // interface 정의
