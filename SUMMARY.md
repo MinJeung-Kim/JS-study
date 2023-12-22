@@ -21,7 +21,6 @@
       * [3-1) Stack](readme/02.-execution-context/3-stack-and-queue/3-1-stack.md)
       * [3-2) Queue](readme/02.-execution-context/3-stack-and-queue/3-2-queue.md)
   * [03. This](readme/03.-this/README.md)
-    * [1) 호출방식에 따른 This](readme/03.-this/1-this.md)
     * [1-1) 전역 공간](readme/03.-this/1-1/README.md)
       * [1-1-1) Node.js의 this](readme/03.-this/1-1/1-1-1-node.js-this.md)
 * [TypeScript](typescript/README.md)

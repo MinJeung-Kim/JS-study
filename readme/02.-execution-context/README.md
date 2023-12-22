@@ -40,3 +40,8 @@ layout:
 * **함수 실행이 끝나면** **해당 함수의 실행 컨텍스트는 스택에서 `pop`**.
 
 <figure><img src="../../.gitbook/assets/2023-12-22 18 08 24 (1).png" alt=""><figcaption></figcaption></figure>
+
+{% content-ref url="3-stack-and-queue/" %}
+[3-stack-and-queue](3-stack-and-queue/)
+{% endcontent-ref %}
+
