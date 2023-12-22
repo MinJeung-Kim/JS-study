@@ -2,7 +2,7 @@
 description: 스코프 & 스코프 체인 & OuterEnvironment Reference(외부환경 참조)
 ---
 
-# 2-2) OuterEnvironment Reference
+# 2-1-2) OuterEnvironment Reference
 
 ### 스코프(Scope)
 
@@ -55,4 +55,4 @@ outer();
 console.log(a); // 1
 ```
 
-<figure><img src="../../../../.gitbook/assets/2023-12-19 18 59 53 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2023-12-19 18 59 53 (1).png" alt=""><figcaption></figcaption></figure>

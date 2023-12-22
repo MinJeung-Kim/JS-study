@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# 1) Stack & Queue
+# 3) Stack & Queue
 
 <div align="left">
 
@@ -26,10 +26,10 @@ layout:
 
 ### 사용 예
 
-{% content-ref url="1-1-stack.md" %}
-[1-1-stack.md](1-1-stack.md)
+{% content-ref url="3-1-stack.md" %}
+[3-1-stack.md](3-1-stack.md)
 {% endcontent-ref %}
 
-{% content-ref url="1-2-queue.md" %}
-[1-2-queue.md](1-2-queue.md)
+{% content-ref url="3-2-queue.md" %}
+[3-2-queue.md](3-2-queue.md)
 {% endcontent-ref %}

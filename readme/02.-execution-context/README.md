@@ -25,26 +25,18 @@ layout:
 
 </div>
 
-### 전역 실행 컨텍스트**(Global Execution Context)**
-
-* JavaScript **코드가 처음 실행될 때 생성**되는 기본 컨텍스트.
-* 각 JavaScript 환경(브라우저 또는 Node.js)에는 **하나의 전역 실행 컨텍스트만 존재**.
-* <mark style="background-color:orange;">전역 객체</mark>(`window` in the browser, `global` in Node.js)와 관련이 있으며, 전역 변수와 함수는 이 전역 객체의 속성과 메소드로 취급됨.
-
-### **함수 실행 컨텍스트(Function Execution Context)**
-
-* <mark style="background-color:orange;">함수가 호출될 때마다 새로운 실행 컨텍스트 생성</mark>.
-* `함수의 로컬 변수`, `매개변수`, `this` 값 등 **함수의 실행에 필요한 모든 정보를 포함**.
-* 활성화되는 시점에 **`VariableEnvironment`**, **`LexicalEnvironment`**, **`ThisBinding`**의 세 가지 정보를 수집.
-
-<figure><img src="../../.gitbook/assets/스크린샷_2022-05-05_오후_11.12.44.png" alt=""><figcaption><p>실행 컨텍스트 구성</p></figcaption></figure>
-
-{% content-ref url="2-ve-and-le/" %}
-[2-ve-and-le](2-ve-and-le/)
+{% content-ref url="1-global-execution-context.md" %}
+[1-global-execution-context.md](1-global-execution-context.md)
 {% endcontent-ref %}
 
+{% content-ref url="2-function-execution-context/" %}
+[2-function-execution-context](2-function-execution-context/)
+{% endcontent-ref %}
 
+* `JavaScript 엔진`은 **실행 컨텍스트 스택를 사용**하여 <mark style="background-color:orange;">실행 컨텍스트를 관리</mark>한다.&#x20;
+* `스택`은 코드의 **실행 순서를 제어**함.
+* **전역 실행 컨텍스트**는 프로그램이 시작될 때 스택에 **가장 먼저 `push`**됨.
+* <mark style="background-color:orange;">새로운 함수가 호출될 때마다</mark> 해당 **함수의 실행 컨텍스트**가 스택에 `push`됨.
+* **함수 실행이 끝나면** **해당 함수의 실행 컨텍스트는 스택에서 `pop`**.
 
-#### 참고
-
-[\[10분 테코톡\] 💙하루의 실행 컨텍스트](https://www.youtube.com/watch?v=EWfujNzSUmw)
+<figure><img src="../../.gitbook/assets/2023-12-22 18 08 24 (1).png" alt=""><figcaption></figcaption></figure>
