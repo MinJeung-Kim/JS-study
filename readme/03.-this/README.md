@@ -28,8 +28,8 @@ layout:
 ### This binding
 
 * 함수가 호출될 때, `this` 키워드가 가리킬 객체가 결정되는 과정.
-* JavaScript함수 호출 -> 실행 컨텍스트 생성 -> this가 가리킬 객체 결정.
-* 함수가 어떻게 호출되었는지(객체의 메소드로 호출, 일반 함수로 호출, 생성자 함수로 호출 등)에 따라 달라진다.
+* **JavaScript함수 호출 -> 실행 컨텍스트 생성 -> this가 가리킬 객체 결정**.
+* <mark style="background-color:orange;">**함수가 어떻게 호출되었는지**</mark>(객체의 메소드로 호출, 일반 함수로 호출, 생성자 함수로 호출 등)에 따라 달라진다.
 
 ### 객체의 메소드로 호출
 
@@ -72,4 +72,21 @@ function Person(name) {
 
 const alice = new Person("Roxie");
 alice.greet(); // "Hello, I am Roxie" 
+```
+
+### 콜백 함수로 호출
+
+```javascript
+setTimeout(function () {
+  console.log(this); // Window
+}, 300);
+
+[1, 2, 3].forEach(function (x) {
+  console.log(this, x); // Window 1, Window 2 , Window 3
+});
+
+document.body.innerHTML += '<button id="a">클릭</button>';
+document.body.querySelector("#a").addEventListener("click", function (e) {
+  console.log(this, e); // <button id="a">클릭</button>, event 객체
+});
 ```
