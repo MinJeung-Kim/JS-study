@@ -2,20 +2,23 @@
 description: node.js 환경
 ---
 
-# 1-1-1) Node.js의 this
+# 1-1) Node.js의 this
 
 ### 최상위 수준에서의 `this`
 
 * 최상위 수준의 `this`는 `module.exports`를 가리키며, <mark style="background-color:orange;">전역 객체</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">**global**</mark><mark style="background-color:orange;">과는 다름</mark>.
 
-```javascript
-console.log(this); // {}
+<pre class="language-javascript"><code class="lang-javascript">console.log(this); // {}
 console.log(module.exports); // {}
-console.log(global); // <ref *1> Object [global] { global: [Circular *1], ...}
+console.log(global); // &#x3C;ref *1> Object [global] { global: [Circular *1], ...}
 
+// Node.js 모듈
 console.log(this === module.exports); // true
 console.log(this === global); // false
-```
+
+<strong>// Node.js REPL
+</strong>console.log(this === global); // true
+</code></pre>
 
 ### 함수 내에서의 `this`
 
