@@ -24,7 +24,7 @@ layout:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/2023-12-21 21 49 07.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2023-12-21 21 49 07.png" alt="" width="563"><figcaption></figcaption></figure>
 
 </div>
 

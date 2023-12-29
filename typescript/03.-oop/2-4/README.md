@@ -12,8 +12,8 @@ description: Encapsulation(은닉화), Abstraction(추상화), Inheritance(상�
 [3-abstraction.md](3-abstraction.md)
 {% endcontent-ref %}
 
-{% content-ref url="4-inheritance.md" %}
-[4-inheritance.md](4-inheritance.md)
+{% content-ref url="4-inheritance/" %}
+[4-inheritance](4-inheritance/)
 {% endcontent-ref %}
 
 {% content-ref url="5-polymorphism.md" %}
