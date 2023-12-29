@@ -15,9 +15,12 @@ layout:
 
 # 2-3) Inheritance
 
-* **`extends`** 키워드 사용.
+* **클래스 간의 계층적 관계 구성, 명확한 프로그램 구조**.
+* **파생 클래스 (Derived Class) 정의:** `extends` 키워드를 사용하여 기본 클래스를 상속받는 파생 클래스를 정의.
+* 필요에 따라 <mark style="background-color:orange;">추가적인 속성이나 메소드를 정의하거나 기존 메소드를 재정의(overwriting) 가능</mark>.
 * 부모 class에 있는 멤버변수 또는 함수를 상속 받을 수 있다.
-* 상속받은 함수는 재구현 가능(overwriting).
+* **생성자 함수와 `super` 호출:** 파생 클래스에 생성자 함수를 정의할 때, `super` 키워드를 사용.
+* `super`는 **파생 클래스에서 기본 클래스의 생성자를 호출**하거나, **기본 클래스의 메소드에 접근**할 때 사용.
 
 <div align="left">
 
@@ -26,93 +29,36 @@ layout:
 </div>
 
 ```typescript
-{
-  type CoffeeCup = {
-    shots: number;
-    hasMilk: boolean;
-  };
+// 기본 클래스 정의
+class Animal {
+    name: string;
 
-  interface CoffeeMaker {
-    makeCoffee(shots: number): CoffeeCup;
-  }
-
-  class CoffeeMachine implements CoffeeMaker {
-    private static BEANS_GRAMM_PER_SHOT: number = 7; // class level
-    private coffeeBeans: number = 0; // instance (object) level
-
-    // public or protected 접근자 사용
-    constructor(coffeeBeans: number) {
-      this.coffeeBeans = coffeeBeans;
+    constructor(name: string) {
+        this.name = name;
     }
 
-    static makeMachine(coffeeBeans: number): CoffeeMachine {
-      return new CoffeeMachine(coffeeBeans);
+    move(distanceInMeters: number = 0) {
+        console.log(`${this.name} moved ${distanceInMeters}m.`);
     }
-
-    fillCoffeeBeans(beans: number) {
-      if (beans < 0) {
-        throw new Error("value for beans should be greater than 0");
-      }
-      this.coffeeBeans += beans;
-    }
-
-    clean() {
-      console.log("cleaning the machine...🧼");
-    }
-
-    private grindBeans(shots: number) {
-      console.log(`grinding beans for ${shots}`);
-      if (this.coffeeBeans < shots * CoffeeMachine.BEANS_GRAMM_PER_SHOT) {
-        throw new Error("Not enough coffee beans!");
-      }
-      this.coffeeBeans -= shots * CoffeeMachine.BEANS_GRAMM_PER_SHOT;
-    }
-
-    private preheat(): void {
-      console.log("heating up... 🔥");
-    }
-
-    private extract(shots: number): CoffeeCup {
-      console.log(`Pulling ${shots} shots... ☕️`);
-      return {
-        shots,
-        hasMilk: false,
-      };
-    }
-
-    makeCoffee(shots: number): CoffeeCup {
-      this.grindBeans(shots);
-      this.preheat();
-      return this.extract(shots);
-    }
-  }
-
-  class CaffeLatteMachine extends CoffeeMachine {
-    constructor(beans: number, public readonly serialNumber: string) {
-      // 자식 class에서 생성자를 따로 구현할 경우 꼭 부모 class의 생성자를 상속 받아야함.
-      super(beans);
-    }
-    private steamMilk(): void {
-      console.log("Steaming some milk... 🥛");
-    }
-
-    // 부모class에 있는 함수를 overwriting
-    makeCoffee(shots: number): CoffeeCup {
-      // super.makeCoffee(shots) : 부모class에 있는 함수 사용.
-      const coffee = super.makeCoffee(shots);
-      this.steamMilk();
-      return {
-        ...coffee,
-        hasMilk: true,
-      };
-    }
-  }
-
-  const machine = new CoffeeMachine(23);
-  const latteMachine = new CaffeLatteMachine(23, "SSSS");
-  const coffee = latteMachine.makeCoffee(1);
-  console.log(coffee);
-  console.log(latteMachine.serialNumber);
 }
 
+// 파생 클래스 정의
+class Dog extends Animal {
+    constructor(name: string) {
+        super(name); // 'super'를 사용하여 기본 클래스의 생성자를 호출
+    }
+
+    bark() {
+        console.log('Woof! Woof!');
+    }
+
+    move(distanceInMeters = 5) {
+        console.log('Running...');
+        super.move(distanceInMeters); // 'super'를 사용하여 기본 클래스의 메소드 호출
+    }
+}
+
+const dog = new Dog("Rex");
+dog.bark();
+dog.move(10);
 ```
