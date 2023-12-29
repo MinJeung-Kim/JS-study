@@ -56,3 +56,5 @@
         * [2-3-2) Composition](typescript/03.-oop/2-4/4-inheritance/2-3-2-composition.md)
       * [2-4) Polymorphism](typescript/03.-oop/2-4/5-polymorphism.md)
     * [3) Getter & Setter](typescript/03.-oop/3-getter-and-setter.md)
+* [NextJS](nextjs.md)
+* [ReactJS](reactjs.md)

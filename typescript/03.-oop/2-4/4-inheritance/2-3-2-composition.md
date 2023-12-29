@@ -11,7 +11,10 @@ description: 상속의 문제점을 보완.
 
 ### Composition 예제(has-a)
 
-* `Car`는 `Engine`을 상속받지 않고, 대신 `Engine` 인스턴스를 포함하여 엔진 관련 기능을 제공.
+* `Car`는 `Engine`을 **상속받지 않고**, 대신 `Engine` 인스턴스를 **포함하여 엔진 관련 기능을 제공**.
+* <mark style="background-color:orange;">Car 클래스는 Engine 클래스의 기능을 '가지고 있다(has-a)'.</mark>
+* `Car` 클래스는 `Engine` 클래스의 내부 구현에 대해 알 필요가 없으며, **`Engine` 클래스를 변경해도 `Car` 클래스에 영향을 미치지 않는다.**
+* 두 클래스 간의 **결합도를 낮추고 유연성을 증가**.
 
 ```javascript
 // Engine 클래스 정의
