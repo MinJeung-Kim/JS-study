@@ -54,3 +54,29 @@ myFunction();
 ### 장단점
 
 <table><thead><tr><th width="99"></th><th></th></tr></thead><tbody><tr><td><strong>장점</strong></td><td><ul><li>비동기 코드를 거의 동기 코드처럼 보이고 동작하게 만들 수 있어 가독성이 크게 향상됨.</li><li><code>then</code> 체인을 사용하는 대신, 비동기 작업의 결과를 변수에 할당하여 간결한 코드 작성.</li><li><code>try...catch</code> 블록을 사용하여 쉬운 오류발견.</li><li>반복문이나 조건문 안에서 비동기 작업을 다룰 때 유용.</li><li>중단점 설정으로 쉬운 디버깅 가능.</li></ul></td></tr><tr><td><strong>단점</strong></td><td><ul><li><code>try...catch</code> 블록을 사용하지 않으면 오류가 묵살되므로  모든 <code>await</code> 표현은 적절히 오류 처리되어야 함.</li><li>병렬 처리 미흡으로, <code>Promise.all</code>을 적절히 사용하지 않으면 성능에 영향을 줌.</li><li>특정 <code>await</code>가 이전 작업의 완료를 기다리는 동안 다른 작업들이 불필요하게 대기하는 상황이 발생할 수 있음.</li></ul></td></tr></tbody></table>
+
+### 순차적 처리의 오용
+
+* 여러 비동기 작업이 서로 의존하지 않는 경우에도, `await`를 사용하여 순차적으로 작업을 처리하는 것은 비효율적.
+* `Promise.all`을 사용하여 병렬 처리.
+
+```javascript
+// 잘못된 사용
+async function fetchSequentially() {
+  const result1 = await fetch('https://example.com/api/item1');
+  const result2 = await fetch('https://example.com/api/item2');
+  const result3 = await fetch('https://example.com/api/item3');
+  // 각 fetch 호출은 이전 호출이 완료될 때까지 기다림
+}
+
+
+// 올바른 사용 - Promise.all()
+async function fetchInParallel() {
+  const [result1, result2, result3] = await Promise.all([
+    fetch('https://example.com/api/item1'),
+    fetch('https://example.com/api/item2'),
+    fetch('https://example.com/api/item3')
+  ]);
+  // 모든 fetch 호출이 병렬적으로 실행됨
+}
+```

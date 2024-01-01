@@ -40,6 +40,7 @@
         * [3-1-2) Fetch](readme/04./3/3-1-apis/3-1-2-fetch.md)
         * [3-1-3) Promise](readme/04./3/3-1-apis/3-1-3-promise.md)
         * [3-1-4) async/await](readme/04./3/3-1-apis/3-1-4-async-await.md)
+        * [3-1-5) fetch or axios with async/await](readme/04./3/3-1-apis/3-1-5-fetch-or-axios-with-async-await.md)
 * [TypeScript](typescript/README.md)
   * [01. What's TypeScript?](typescript/01.-whats-typescript.md)
   * [02. Basic types](typescript/02.-basic-types/README.md)
