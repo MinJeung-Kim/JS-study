@@ -12,7 +12,11 @@ layout:
     visible: true
 ---
 
-# 3-1) 비동기 동작 방식
+# 3-1) 비동기 APIs
+
+> 🪄 어떤 상황에 어떤 비동기 API를 '왜' 써야하는지 정확하게 알고 사용하자!
+
+### 비동기 동작 방식
 
 1. **`execute()` 함수가 호출**되면, [**JavaScript 엔진**](#user-content-fn-1)[^1]은 <mark style="background-color:orange;">execute()의 실행 컨텍스트를</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">**Call Stack**</mark><mark style="background-color:orange;">에 푸시</mark>함.
 2. **`console.log("1")` 는 동기적**으로 작동하므로, <mark style="background-color:orange;">즉시 "1"을 콘솔에 출력</mark>하고, 바로 다음 줄로 이동.
@@ -27,11 +31,9 @@ layout:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/2024-01-01 19 10 56 (2).png" alt=""><figcaption><p>→ 비동기 동작 방식</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2024-01-01 19 10 56.png" alt=""><figcaption><p>→ 비동기 동작 방식</p></figcaption></figure>
 
 </div>
-
-
 
 [^1]: * JavaScript <mark style="background-color:orange;">**코드를 해석하고 실행**</mark>하는 역할.
     * 코드를 **읽고**, **실행 컨텍스트를 생성**하며, **변수와 함수 선언을 메모리에 저장**.
