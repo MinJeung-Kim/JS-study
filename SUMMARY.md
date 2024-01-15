@@ -46,6 +46,7 @@
       * [4-2) Non-blocking](readme/04./4-blocking-and-non-blocking/4-2-non-blocking.md)
   * [05. 클로저(Closure)](readme/05.-closure/README.md)
     * [What's Closure](readme/05.-closure/whats-closure.md)
+  * [06. 프로토타입](readme/06..md)
 * [TypeScript](typescript/README.md)
   * [01. What's TypeScript?](typescript/01.-whats-typescript.md)
   * [02. Basic types](typescript/02.-basic-types/README.md)
