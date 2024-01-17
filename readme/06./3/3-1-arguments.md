@@ -53,3 +53,36 @@ console.log(multiply(1, 2, 3)); //  [Arguments] { '0': 1, '1': 2, '2': 3 } , 2
 * **`callee property`** : 함수 자신을 가리킴.
 * **`length property`** : 인수의 개수.
 * **`Symbol(Symbol.iterator) property`** : arguments 객체를 순회 가능한 자료구조인 이터러블로 만들기 위한 프로퍼티.
+
+## 실제 사용 예
+
+* **arguments 객체는** 매개변수 개수를 확정할 수 없는 [<mark style="background-color:orange;">**가변 인자 함수**</mark>](#user-content-fn-1)[^1]<mark style="background-color:orange;">**를구현할 때 유용**</mark>하다.
+
+### 1. arguments 객체 사용
+
+* `arguments`는 함수 내에서 자동으로 사용할 수 있는 **배열과 유사한 객체**다. 이 객체는 함수에 전달된 모든 인자를 포함한다.
+* 함수 내에서 `arguments[0]`, `arguments[1]` 등으로 각 인자에 접근할 수 있다.
+
+```javascript
+function exampleFunction() {
+  for (let i = 0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+  }
+}
+exampleFunction('Hello', 'World', '!');
+```
+
+### 2. 나머지 매개변수(Rest Parameters) 사용
+
+* ES6(ES2015)에서 도입된 Rest Parameters 문법(`...`)을 사용하면, 함수가 받는 여러 인자를 하나의 배열로 모을 수 있다.
+* `arguments` 객체보다 더 명시적이고 사용하기 쉽다.
+
+```javascript
+function exampleFunction(...args) {
+  args.forEach(arg => console.log(arg));
+}
+exampleFunction('Hello', 'World', '!');
+```
+
+[^1]: * 호출 시에 전달되는 인자의 개수가 고정되어 있지 않고, 함수가 여러 개의 인자를 받을 수 있도록 설계된 함수.
+    * 가변 인자 함수는 어떤 수의 인자든 처리할 수 있도록 유연하게 작성됨.
