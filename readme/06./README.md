@@ -46,6 +46,8 @@ console.log(person1.constructor === Person); // true
 
 <figure><img src="../../.gitbook/assets/2024-01-18 17 18 35.png" alt=""><figcaption><p>→  Person 객체의 인스턴스의 속성 확인</p></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/2024-01-18 19 27 51 (1).png" alt=""><figcaption></figcaption></figure>
+
 {% content-ref url="3/" %}
 [3](3/)
 {% endcontent-ref %}
