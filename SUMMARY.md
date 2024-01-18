@@ -54,6 +54,8 @@
       * [3-2) caller 프로퍼티](readme/06./3/3-2-caller.md)
       * [3-3) length & name 프로퍼티](readme/06./3/3-3-length-and-name.md)
       * [3-4) \_\_proto\_\_접근자 프로퍼티](readme/06./3/3-4-\_\_proto\_\_.md)
+      * [prototype 프로퍼티](readme/06./3/prototype.md)
+    * [4) 프로토타입 체인](readme/06./4.md)
 * [TypeScript](typescript/README.md)
   * [01. What's TypeScript?](typescript/01.-whats-typescript.md)
   * [02. Basic types](typescript/02.-basic-types/README.md)

@@ -35,7 +35,7 @@ console.log(Object.getOwnPropertyDescriptor(Object.prototype, "__proto__"));
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/2024-01-17 15 33 10.png" alt="" width="563"><figcaption><p>→ 함수 객체 내부의 프로퍼티 확인</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2024-01-18 15 38 16.png" alt=""><figcaption><p>→ 함수 객체 내부의 프로퍼티 확인</p></figcaption></figure>
 
 </div>
 
