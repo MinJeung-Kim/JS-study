@@ -56,6 +56,7 @@
       * [3-4) \_\_proto\_\_접근자 프로퍼티](readme/06./3/3-4-\_\_proto\_\_.md)
       * [3-5) prototype 프로퍼티](readme/06./3/3-5-prototype.md)
     * [4) 프로토타입 체인](readme/06./4.md)
+  * [07. 클래스](readme/07..md)
 * [TypeScript](typescript/README.md)
   * [01. What's TypeScript?](typescript/01.-whats-typescript.md)
   * [02. Basic types](typescript/02.-basic-types/README.md)
