@@ -58,6 +58,7 @@
     * [4) 프로토타입 체인](readme/06./4.md)
   * [07. 클래스](readme/07./README.md)
     * [1) 자바스크립트의 클래스](readme/07./1.md)
+    * [2) 클래스 상속](readme/07./2.md)
 * [TypeScript](typescript/README.md)
   * [01. What's TypeScript?](typescript/01.-whats-typescript.md)
   * [02. Basic types](typescript/02.-basic-types/README.md)
