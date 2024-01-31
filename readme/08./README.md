@@ -64,3 +64,25 @@ clearTimeout(timerId);
 
 ### setInterval / clearInterval
 
+* setInterval 함수는 두 번째 인수로 전달받은 시간(ms, 1/1000초)으로 <mark style="background-color:orange;">반복 동작하는 타이머를 생성</mark>한다.
+* 타이머가 만료될 때마다 첫 번째 인수로 전달받은 콜백 함수가 취소될 때까지 반복 호출된다.
+
+```javascript
+const timerId = setImterval(func:code[ , delay, param1, param2, ...]);
+```
+
+* setTimeout / clearTimeout 함수와 유사하면 다른 점은 반복 동작한다는 것이다.
+
+```javascript
+let count = 1;
+
+// 1초(1000ms) 후 타이머가 만료되어 콜백 함수가 호출됨.
+// setInterval함수는 생성된 타이머를 식별할 수 있는 고유한 타이머 id를 반환함.
+const timerId = setInterval(()=> {
+    console.log(count); // 1 2 3 4 5
+    
+    // count가 5이면 setInterval 함수가 반환한 타이머 id를 clearInterval함수의 인자로 전달하여 취소함.
+    // 타이머가 취소 되면 setInterval함수의 콜백 함수가 실행되지 않음.
+    if(count++ === 5) clearInterval(timeoutId);
+}, 1000);
+```
