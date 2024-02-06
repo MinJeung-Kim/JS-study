@@ -45,3 +45,23 @@ layout:
 
 <figure><img src="../.gitbook/assets/2024-02-06 16 54 26.png" alt=""><figcaption><p>→ 반복문 유무에 따라서 연산의 갯수가 n의 개수 만큼 늘어나며, 반복문에서 사용되는 연산 또한 추가된다.</p></figcaption></figure>
 
+### 빅오 표현식
+
+```javascript
+// n의 값이 커질수록 실행 시간이 늘어남.
+f(n) could be linear (f(n) = n)
+
+// n의 값이 커질수록 실행 시간이 n의 제곱으로 늘어남.
+f(n) could be quadratic (f(n) = n²)
+
+// n의 값에 영향을 받지 않은 상수.
+f(n) could be constant(f(n) = 1)
+
+// 그 외
+f(n) could be something entirely different!
+```
+
+<figure><img src="../.gitbook/assets/Group 146 (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Group 147 (1).png" alt=""><figcaption><p>→ 빅오 표현식</p></figcaption></figure>
+
