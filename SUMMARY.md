@@ -94,3 +94,7 @@
 * [Git & Github](git-and-github/README.md)
   * [01. Git](git-and-github/01.-git.md)
   * [02. GitHub](git-and-github/02.-github.md)
+* [자료구조와 알고리즘](undefined/README.md)
+  * [Big O](undefined/big-o.md)
+  * [자료구조(데이터 구조)](undefined/undefined.md)
+  * [알고리즘](undefined/undefined-1.md)
