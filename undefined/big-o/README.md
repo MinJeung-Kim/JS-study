@@ -35,7 +35,7 @@ layout:
 
 * 1부터 N값의 사이의 모든 숫자를 더하는 기능을 구현하시오.
 
-<figure><img src="../.gitbook/assets/2024-02-06 16 26 59.png" alt=""><figcaption><p>→ 2가지 구현 방법 비교하기.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-06 16 26 59.png" alt=""><figcaption><p>→ 2가지 구현 방법 비교하기.</p></figcaption></figure>
 
 ### **코드가 실행하는데 걸리는 시간 비교**
 
@@ -43,7 +43,7 @@ layout:
 * 그렇기때문에 컴퓨터가 처리해야하는 연산의 개수를 비교해보면, 반복문을 사용하지 않은 코드가 더 빠르다는 것을 알 수 있다.
 * [https://rithmschool.github.io/function-timer-demo/](https://rithmschool.github.io/function-timer-demo/) 에서 시각적으로 확인해 볼 수 있다.
 
-<figure><img src="../.gitbook/assets/2024-02-06 16 54 26.png" alt=""><figcaption><p>→ 반복문 유무에 따라서 연산의 갯수가 n의 개수 만큼 늘어나며, 반복문에서 사용되는 연산 또한 추가된다.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2024-02-06 16 54 26.png" alt=""><figcaption><p>→ 반복문 유무에 따라서 연산의 갯수가 n의 개수 만큼 늘어나며, 반복문에서 사용되는 연산 또한 추가된다.</p></figcaption></figure>
 
 ### 빅오 표현식
 
@@ -61,9 +61,9 @@ f(n) could be constant(f(n) = 1)
 f(n) could be something entirely different!
 ```
 
-<figure><img src="../.gitbook/assets/Group 146 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Group 146 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Group 147 (1).png" alt=""><figcaption><p>→ 빅오 표현식</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Group 147 (1).png" alt=""><figcaption><p>→ 빅오 표현식</p></figcaption></figure>
 
 
 
@@ -103,7 +103,7 @@ O(n² + 5n + 8) => O(n²)
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/Group 150.png" alt="" width="563"><figcaption><p>→ logAtLeast5()와 logAtMost5()의 빅오 복잡도 비교.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Group 150.png" alt="" width="563"><figcaption><p>→ logAtLeast5()와 logAtMost5()의 빅오 복잡도 비교.</p></figcaption></figure>
 
 </div>
 
