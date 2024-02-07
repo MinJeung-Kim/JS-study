@@ -65,3 +65,17 @@ f(n) could be something entirely different!
 
 <figure><img src="../.gitbook/assets/Group 147 (1).png" alt=""><figcaption><p>→ 빅오 표현식</p></figcaption></figure>
 
+
+
+## 빅오 표현식 단순화 하기
+
+* 대략적으로 정확한 큰 그림을 보는것이 중요하기 때문에 상수는 중요하지 않다.
+
+<pre class="language-javascript"><code class="lang-javascript">• O(2n) => O(n)
+
+// 연산 개수가 어떤 상황에서든 500개가 있다는 뜻.
+<strong>• O(500) => O(1)
+</strong>
+• O(13n) => O(n²)
+
+</code></pre>
