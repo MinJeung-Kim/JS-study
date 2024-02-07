@@ -70,12 +70,18 @@ f(n) could be something entirely different!
 ## 빅오 표현식 단순화 하기
 
 * 대략적으로 정확한 큰 그림을 보는것이 중요하기 때문에 상수는 중요하지 않다.
+* 상수를 생략하고 단순화한 표현식을 보면 O(n)보다 O(1)이 빠르다는 것을 쉽게 확인 할 수 있다.
 
 <pre class="language-javascript"><code class="lang-javascript">• O(2n) => O(n)
 
 // 연산 개수가 어떤 상황에서든 500개가 있다는 뜻.
 <strong>• O(500) => O(1)
 </strong>
-• O(13n) => O(n²)
-
+• O(13n²) => O(n²)
 </code></pre>
+
+* 작은 숫자들에도 큰 의미가 없으므로 무시할 수 있다.
+
+```javascript
+O(n + 10) => O(n)3 ddfff
+```
