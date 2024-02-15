@@ -91,6 +91,7 @@
     * [3) Getter & Setter](typescript/03.-oop/3-getter-and-setter.md)
   * [우아한 타입스크립트 with 리액트](typescript/with/README.md)
     * [1장 들어가며](typescript/with/1.md)
+    * [2장 타입](typescript/with/2.md)
 * [NextJS](nextjs.md)
 * [ReactJS](reactjs.md)
 * [Git & Github](git-and-github/README.md)
