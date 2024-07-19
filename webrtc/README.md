@@ -98,6 +98,9 @@ peerConnection.onconnectionstatechange = () => {
 ```
 
 * WebSocket을 사용하는 시그널링 서버를 기반으로 하는 ICE 후보 전송 로직.
+* **WebSocket 시그널링**:  `signalingChannel`이 WebSocket 연결을 나타내며, 이 채널을 통해 JSON 형식의 메시지를 보내 ICE 후보를 전송한다.
+* **메시지 타입과 데이터**: 메시지에는 `type`, `candidate`,  `to` 필드가 포함된다.&#x20;
+* `type`은 메시지의 종류를 식별하고, `candidate`는 ICE 후보 정보를 담고, `to`는 메시지의 목적지(상대 피어)를 식별한다.
 
 ```javascript
 peerConnection.onicecandidate = event => {
