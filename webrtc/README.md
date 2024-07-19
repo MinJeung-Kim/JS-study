@@ -52,3 +52,47 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: true })
 
 * 먼저, `RTCPeerConnection` 인터페이스를 생성하여 브라우저 간의 직접적인 데이터 스트리밍을 설정한다.
 * &#x20;RTCPeerConnection은 연결, 통신 및 보안 관련 모든 세부 사항을 관리하는 역할을 한다.
+
+```javascript
+// RTCPeerConnection 설정
+const configuration = {
+  iceServers: [
+    { urls: "stun:stun.example.com" },
+    { urls: "turn:turn.example.com", username: "user", credential: "pass" }
+  ]
+};
+
+// PeerConnection 객체 생성
+const peerConnection = new RTCPeerConnection(configuration);
+
+// 로컬 미디어 스트림 추가
+navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+  .then(stream => {
+    stream.getTracks().forEach(track => {
+      peerConnection.addTrack(track, stream);
+    });
+  });
+
+// ICE 후보 이벤트 핸들링
+peerConnection.onicecandidate = event => {
+  if (event.candidate) {
+    console.log('New ICE candidate:', event.candidate);
+    // 이후 후보를 상대 피어에게 전송하는 로직 필요
+    // signaling : Offer(오퍼)와 Answer(앤서) SDP 메시지와 함께 진행
+  }
+};
+
+// 원격 스트림 수신 처리
+peerConnection.ontrack = event => {
+  const remoteVideo = document.getElementById('remoteVideo');
+  if (remoteVideo.srcObject !== event.streams[0]) {
+    remoteVideo.srcObject = event.streams[0];
+    console.log('Received new stream');
+  }
+};
+
+// 연결 상태 감시
+peerConnection.onconnectionstatechange = () => {
+  console.log('Connection state change:', peerConnection.connectionState);
+};
+```
