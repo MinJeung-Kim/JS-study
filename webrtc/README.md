@@ -96,3 +96,19 @@ peerConnection.onconnectionstatechange = () => {
   console.log('Connection state change:', peerConnection.connectionState);
 };
 ```
+
+* WebSocket을 사용하는 시그널링 서버를 기반으로 하는 ICE 후보 전송 로직.
+
+```javascript
+peerConnection.onicecandidate = event => {
+  if (event.candidate) {
+    console.log('New ICE candidate:', event.candidate);
+    // WebSocket을 사용하여 시그널링 서버에 ICE 후보를 전송
+    signalingChannel.send(JSON.stringify({
+      type: 'new-ice-candidate',
+      candidate: event.candidate,
+      to: remotePeerId // 상대방의 식별 ID
+    }));
+  }
+};
+```
