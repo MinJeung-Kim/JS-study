@@ -40,7 +40,7 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: true })
   });
 ```
 
-<figure><img src="../.gitbook/assets/Group 237549.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Group 237549 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Peerjs 라이브러리 사용하지 않고 peer connection 코드 직접 작성해보기!
 
