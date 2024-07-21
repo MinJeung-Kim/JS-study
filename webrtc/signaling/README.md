@@ -19,16 +19,16 @@ WebSocket은 TCP 기반의 프로토콜로, 신뢰성 있는 양방향 통신을
    * 생성된 SDP 메시지는 WebSocket과 같은 신호 교환 채널을 통해 서로 교환된다.
    * 이 과정에서 ICE 후보 정보(IP와 포트)를 포함하여 네트워크 경로를 설정한다.
 
-
+<figure><img src="../../.gitbook/assets/Group 237555 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Signaling 동작 순서
 
-### 1. SDP 교환 시작
+### 1. ICE 후보자 수집 및 교환
 
 * **Offer 생성**: 초기 통신을 시작하려는 peer가 `RTCPeerConnection` 객체를 생성하고, 미디어 스트림을 추가한 후 `SDP offer`를 생성한다.&#x20;
 * **Offer 전송**: 생성된 offer는 시그널링 서버를 통해 상대 peer에게 전송된다.
 
-### 2. ICE 후보자 수집 및 교환
+### 2. SDP 교환 시작
 
 * **ICE 후보자 수집**: 각 peer는 로컬 네트워크 환경에 대한 정보를 수집하며, 이는 호스트 주소, STUN을 통한 반사 주소, TURN을 통한 중계 주소를 포함할 수 있다.
 * **후보자 정보 교환**: peer는 SDP offer 또는 answer와 함께 또는 별도로 ICE 후보자 정보를 수집하고 교환을 시작 한다. 이 과정은 SDP offer/answer 전송과 병행하여 발생할 수 있다.
