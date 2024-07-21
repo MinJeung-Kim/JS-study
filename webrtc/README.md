@@ -42,6 +42,8 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: true })
 
 <figure><img src="../.gitbook/assets/Group 237549 (1).png" alt=""><figcaption></figcaption></figure>
 
+`WebRTC library`는 peer to peer연결을 위한 `Peer Connection`과 IP/Port/코덱 등 통화 환경을 WebSocket을 이용하여 처리하는 `Signalling`, Peer간 미디어 전송을 처리하는 `Transport`, `Media(음성/영상)Engine`으로 구성되어 있다.
+
 ### Peerjs 라이브러리 사용하지 않고 peer connection 코드 직접 작성해보기!
 
 프로토타입을 먼저 확인 하고 싶어 하시는 부장님을 위해 아직  WebRTC가 무엇인지 확실히 알지 못하지만 google검색과 ChatGPT의 도움을 받아 여차여차 2주만에 구현해서 보여드렸다.
