@@ -23,7 +23,7 @@ description: WebRTC (Web Real-Time Communication)는 웹 브라우저와 앱에�
 
 ### &#x20;WebRTC는 라이브러리인데 npm install로 설치하지 않고 사용이 가능하다?
 
-* `WebRTC library`는 브라우저의자바스크립트 엔진에 포함된 라이브러리로, 자바스크립트로 접근이 가능하다.
+* `WebRTC library`는 브라우저의 자바스크립트 엔진에 포함된 라이브러리로, 자바스크립트로 접근이 가능하다.
 * WebRTC로 화상/음성 통화 기능을 구현할 경우, JavaScript에서 사용할 수 있는 Web API의 일부인 `getUserMedia()` 메소드를 사용하여 사용자의 카메라와 마이크 같은 미디어 입력 장치 접근을 통해 미디어 스트림을 얻어 애플리케이션에서 사용할 수 있다.
 * 자세한 내용은 [Mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)에서 확인 할 수 있다.
 
@@ -40,7 +40,7 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: true })
   });
 ```
 
-<figure><img src="../.gitbook/assets/Group 237547 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Group 237549.png" alt=""><figcaption></figcaption></figure>
 
 ### Peerjs 라이브러리 사용하지 않고 peer connection 코드 직접 작성해보기!
 
