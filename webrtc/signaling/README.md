@@ -19,7 +19,7 @@ WebSocket은 TCP 기반의 프로토콜로, 신뢰성 있는 양방향 통신을
    * 생성된 SDP 메시지는 WebSocket과 같은 신호 교환 채널을 통해 서로 교환된다.
    * 이 과정에서 ICE 후보 정보(IP와 포트)를 포함하여 네트워크 경로를 설정한다.
 
-<figure><img src="../../.gitbook/assets/Group 237555 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Group 237562.png" alt=""><figcaption></figcaption></figure>
 
 `WebSocket`서버는 통화요청 및 Peer간 접속을 위한 정보를 전달하는 역할을 하며, `STURN`서버는 ICE 규격을 이용하여 상대방이 접속할 수 있게 지원한다. `TURN`서버는 Peer간 데이터 통신이 불가한 경우 데이터를 중계해 준다.
 
