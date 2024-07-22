@@ -28,10 +28,28 @@ description: ICE (Interactive Connectivity Establishment) 프로세스
 
 <figure><img src="../../.gitbook/assets/Group 237559.png" alt=""><figcaption></figcaption></figure>
 
-
-
-### NAT
+### NAT(Network Address Translation)
 
 * 여러 장치가 하나의 공인 IP 주소를 통해 인터넷에 접속하는 것.
 
 <figure><img src="../../.gitbook/assets/Group 237561.png" alt=""><figcaption></figcaption></figure>
+
+### STUN(Session Traversal Utilities for NAT Server)
+
+WebRTC로 구현되는 서비스에는 특정 STUN 서버가 지정되어있다. 클라이언트는 지정된 STUN 서버에 요청을 보내고, STUN 서버는 클라이언트에게 공인 IP 주소와 포트 번호를 알려준다.
+
+STUN 서버는 상대방에게 알려줄 나의 주소를 알아내기 위해 사용한다.
+
+STUN은 Google, Twilio, Xirsys, AWS, Coturn등 많은 서비스 기업들에서 무료 또는 저렴한 비용으로 제공한다.
+
+
+
+### **중계 후보 (Relayed Candidate)**
+
+네트워크 환경이 복잡하거나, 방화벽 등에 의해 P2P통신이 제한되어 STUN 서버를 이용하지 못할 경우, 데이터를 중계하여 NAT(Network Address Translation) 및 방화벽을 우회할 수 있게 해준다.
+
+`TURN(Traversal Using Relays around NAT)` 서버는 추가적인 경로를 거치므로 지연 시간이 증가하고 비용이 발생하게 되므로 마지막 옵션으로만 사용된다.
+
+TURN 서버는 외부의 서비스들을 이용할 수도 있고, 비용 절감과 성능 개선을 위해 직접 구현하여 개발할 수도 있다.
+
+<figure><img src="../../.gitbook/assets/Group 237563 (1).png" alt=""><figcaption></figcaption></figure>
