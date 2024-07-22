@@ -6,7 +6,7 @@ description: ICE (Interactive Connectivity Establishment) 프로세스
 
 * ICE는 두 피어 간의 가장 효과적인 네트워크 경로를 찾아내어 피어 투 피어(P2P) 연결을 설정하는 방법을 제공한다. 이 과정은 신뢰성 있는 미디어 스트리밍을 가능하게 하기 위해 필수적이다.
 
-### ICE 후보(Candidate)에는 3가지 유형이 있다.
+### 3가지 유형의 ICE 후보(Candidate)
 
 > 일반적으로는 **`서버 반사 후보`**를 사용한다.
 
@@ -16,5 +16,12 @@ description: ICE (Interactive Connectivity Establishment) 프로세스
 
 
 
-### 동작 방식
+### **호스트 후보 (Host Candidate)**
 
+두 사용자가 한 집이나 오피스 등, 같은 로컬 네트워크에 속한 경우, 각 기기의 네트워크 내부용 주소(사설IP)와 포트 번호를 교환 한다.
+
+<figure><img src="../../.gitbook/assets/Group 237557 (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### **서버 반사 후보 (Server Reflexive Candidate)**
+
+<figure><img src="../../.gitbook/assets/Group 237559.png" alt=""><figcaption></figcaption></figure>
