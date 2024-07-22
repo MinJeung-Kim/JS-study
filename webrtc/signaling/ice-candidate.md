@@ -24,4 +24,10 @@ description: ICE (Interactive Connectivity Establishment) 프로세스
 
 ### **서버 반사 후보 (Server Reflexive Candidate)**
 
+일반적으로는 다른 공인 IP주소를 사용하는 네트워크에 속한 사람들간에 화상통화가 이루어진다.
+
+일반적인 사용자의 클라이언트 기기는 여러 장치가 하나의 공인 IP 주소를 통해 인터넷에 접속하게 하는 NAT을 사용한다.
+
+특정 기기와 연락을 주고받으려면 해당 기기가 연결된 라우터의 공인 IP와 해당 기기에 할당된 포트 번호를 알아야하므로, STUN Server를&#x20;
+
 <figure><img src="../../.gitbook/assets/Group 237559.png" alt=""><figcaption></figcaption></figure>
