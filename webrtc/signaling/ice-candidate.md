@@ -48,7 +48,7 @@ STUN은 Google, Twilio, Xirsys, AWS, Coturn등 많은 서비스 기업들에서 
 
 네트워크 환경이 복잡하거나, 방화벽 등에 의해 P2P통신이 제한되어 STUN 서버를 이용하지 못할 경우, 데이터를 중계하여 NAT(Network Address Translation) 및 방화벽을 우회할 수 있게 해준다.
 
-`TURN(Traversal Using Relays around NAT)` 서버는 추가적인 경로를 거치기때문에연지 시간이 증가하고 비용이 발생하게 되므로 마지막 옵션으로만 사용된다.
+`TURN(Traversal Using Relays around NAT)` 서버는 추가적인 경로를 거치기 때문에 지연 시간이 증가하고 비용이 발생하게 되므로 마지막 옵션으로만 사용된다.
 
 TURN 서버는 외부의 서비스들을 이용할 수도 있고, 비용 절감과 성능 개선을 위해 직접 구현하여 개발할 수도 있다.
 
