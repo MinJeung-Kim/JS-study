@@ -1,5 +1,8 @@
 # 기능 구현
 
+* git : [https://github.com/MinJeung-Kim/WebRTC.git](https://github.com/MinJeung-Kim/WebRTC.git)
+* UI/UX reference : [https://www.videosdk.live/prebuilt/demo](https://www.videosdk.live/prebuilt/demo)
+
 ### 1. 로그인/로그아웃/회원가입
 
 

@@ -4,7 +4,6 @@ description: WebRTC (Web Real-Time Communication)는 웹 브라우저와 앱에�
 
 # WebRTC
 
-* git : [https://github.com/MinJeung-Kim/WebRTC.git](https://github.com/MinJeung-Kim/WebRTC.git)
 * study : [https://roxiedev.notion.site/WebRTC-Study-e12928524bae400cb804cdb1da47d739?pvs=4](https://roxiedev.notion.site/WebRTC-Study-e12928524bae400cb804cdb1da47d739?pvs=4)
 * 참고 : [https://www.youtube.com/watch?v=qXkOPXFK3fg](https://www.youtube.com/watch?v=qXkOPXFK3fg)
 * Client 프로그램에서 상대방과 직접 연결(P2P : peer to peer)되어 데이터를 주고받는 기술.
