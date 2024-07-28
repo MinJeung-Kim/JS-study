@@ -108,5 +108,7 @@
 * [WebRTC](webrtc/README.md)
   * [Signaling](webrtc/signaling/README.md)
     * [SDP(Session Description Protocol)](webrtc/signaling/sdp-session-description-protocol.md)
-    * [ICE Candidate](webrtc/signaling/ice-candidate.md)
+    * [ICE Candidate](webrtc/signaling/ice-candidate/README.md)
+      * [개념 및 종류](webrtc/signaling/ice-candidate/undefined.md)
+      * [Candidate State](webrtc/signaling/ice-candidate/candidate-state.md)
   * [기능 구현](webrtc/undefined.md)

@@ -2,7 +2,7 @@
 description: ICE (Interactive Connectivity Establishment) 프로세스
 ---
 
-# ICE Candidate
+# 개념 및 종류
 
 * ICE는 두 피어 간의 가장 효과적인 네트워크 경로를 찾아내어 피어 투 피어(P2P) 연결을 설정하는 방법을 제공한다. 이 과정은 신뢰성 있는 미디어 스트리밍을 가능하게 하기 위해 필수적이다.
 
@@ -20,19 +20,19 @@ description: ICE (Interactive Connectivity Establishment) 프로세스
 
 두 사용자가 한 집이나 오피스 등, 같은 로컬 네트워크에 속한 경우, 각 기기의 네트워크 내부용 주소(사설IP)와 포트 번호를 교환 한다.
 
-<figure><img src="../../.gitbook/assets/Group 237557 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Group 237557 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **서버 반사 후보 (Server Reflexive Candidate)**
 
 일반적인 사용자의 클라이언트 기기는 `NAT`을 사용하여 네트워크에 연결되어 있다. 특정 기기와 연락을 주고 받으려면 해당 기기가 연결된 라우터의 공인 IP와 해당 기기에 할당된 포트 번호를 알아야 하는데, 이 정보를 얻기위해 사용되는 것이 `STUN`이다.
 
-<figure><img src="../../.gitbook/assets/Group 237559.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Group 237559.png" alt=""><figcaption></figcaption></figure>
 
 ### NAT(Network Address Translation)
 
 * 여러 장치가 하나의 공인 IP 주소를 통해 인터넷에 접속하는 것.
 
-<figure><img src="../../.gitbook/assets/Group 237561.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Group 237561.png" alt=""><figcaption></figcaption></figure>
 
 ### STUN(Session Traversal Utilities for NAT Server)
 
@@ -52,4 +52,4 @@ STUN은 Google, Twilio, Xirsys, AWS, Coturn등 많은 서비스 기업들에서 
 
 TURN 서버는 외부의 서비스들을 이용할 수도 있고, 비용 절감과 성능 개선을 위해 직접 구현하여 개발할 수도 있다.
 
-<figure><img src="../../.gitbook/assets/Group 237563 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Group 237563 (1).png" alt=""><figcaption></figcaption></figure>
