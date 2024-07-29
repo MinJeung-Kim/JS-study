@@ -68,3 +68,5 @@ peer.current.ontrack = (ev) => {
   setRemote((prev) => ({ ...prev, stream: ev.streams[0] }));
 };
 ```
+
+<figure><img src="../../../.gitbook/assets/Group 237570.png" alt=""><figcaption></figcaption></figure>
