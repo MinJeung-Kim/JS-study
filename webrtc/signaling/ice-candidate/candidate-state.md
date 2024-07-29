@@ -12,6 +12,15 @@ description: Candidate의 상태에 대해 알아보자.
 
 PeerConnection을 구현하기 위해서는 순서가 중요하다. 먼저, RTCPeerConnection 객체를 생성한 직후 `addTrack`을 호출하여 해당 미디어에 대한 정보를 수집한다. 이 과정에서 RTCPeerConnection은 사용 가능한 네트워크 경로와 프로토콜을 파악하게 된다.
 
+{% hint style="info" %}
+<mark style="color:blue;">**useRef를 사용하여 RTCPeerConnection을 저장하는 이유**</mark>
+
+* 컴포넌트가 리렌더링되더라도 `useRef`의 값은 보존된다.
+* `useRef`의 값이 변경되어도 컴포넌트가 리렌더링되지 않는다.
+* 비동기 콜백 내에서도 항상 최신의 `RTCPeerConnection` 인스턴스에 접근할 수 있다.
+* 컴포넌트가 언마운트될 때 `peer.current`를 통해 `RTCPeerConnection`을 쉽게 정리할 수 있다.
+{% endhint %}
+
 ```javascript
 const peer = useRef(null); 
 const { getMedia } = useGetMedia(); // get peer stream hook
