@@ -43,16 +43,28 @@ peer.current.onicecandidate = (e) => {
 
 <figure><img src="../../../.gitbook/assets/Group 237567.png" alt=""><figcaption></figcaption></figure>
 
-`"sdpMid": "3"`&#x20;
+> `"sdpMid": "3"`&#x20;
+>
+> * 이 후보와 관련된 미디어 스트림의 식별자.&#x20;
+> * "3"은 SDP(Session Description Protocol)에서 이 후보가 네 번째 미디어 섹션에 해당함을 나타낸다.&#x20;
+>
+> `"sdpMLineIndex":`&#x20;
+>
+> * 3 SDP의 미디어 라인 인덱. 여기서도 3은 네 번째 미디어 섹션을 가리킨다.&#x20;
+>
+> `"usernameFragment":`&#x20;
+>
+> * "h8Lg" ICE 프로세스에서 사용되는 사용자 이름 조각.&#x20;
+> * 이는 "ufrag" 값과 일치하며, 연결의 특정 세션을 식별하는 데 사용된다.
 
-* 이 후보와 관련된 미디어 스트림의 식별자.&#x20;
-* "3"은 SDP(Session Description Protocol)에서 이 후보가 네 번째 미디어 섹션에 해당함을 나타낸다.&#x20;
 
-`"sdpMLineIndex":`&#x20;
 
-* 3 SDP의 미디어 라인 인덱. 여기서도 3은 네 번째 미디어 섹션을 가리킨다.&#x20;
+다음으로, 원격 피어의 미디어 스트림(비디오/오디오)을 받아 처리하는 `ontrack` 핸들러를 설정하여 원격 피어로부터 미디어 스트림을 받을 준비를 한다.
 
-`"usernameFragment":`&#x20;
+`setRemote` 함수를 통해 받은 스트림을 애플리케이션의 상태에 저장하여, UI에서 표시할 수 있다.
 
-* "h8Lg" ICE 프로세스에서 사용되는 사용자 이름 조각.&#x20;
-* 이는 "ufrag" 값과 일치하며, 연결의 특정 세션을 식별하는 데 사용된다.
+```javascript
+peer.current.ontrack = (ev) => {
+  setRemote((prev) => ({ ...prev, stream: ev.streams[0] }));
+};
+```
